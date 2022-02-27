@@ -1,0 +1,214 @@
+
+h1
+{
+  transition: 1s ease;
+}
+
+h2
+{       
+  
+  margin: auto;
+
+
+}
+hr
+{
+    color: white;
+}
+
+p
+{
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+nav{
+   
+    background-color: lightcyan;
+}
+
+footer
+{
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    height: 200px;
+}
+/* Utilities */
+
+.section-headings
+{
+    padding-bottom: 50px;
+    text-align: center;
+}
+.section-headings:hover
+{
+    color: rgb(73, 73, 212);
+    text-decoration: underline wavy;
+}
+.page-up
+{
+    font-size: 0.7rem;
+    border-radius: 1cm;
+    padding: 0 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;   
+    right: 10px;
+}
+@media (max-width: 1000px)
+{
+
+    .page-up
+    {
+        display: none;
+    }
+}
+
+
+/*  Main section at top of Page */
+
+.title
+{
+    font-size: 3rem;
+    text-align: left;
+    font-weight: 900;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.main-section{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-image: url("images/drinkWater.jpeg");
+    background-position: 50%;
+   
+    background-size: cover;
+    align-items: center;
+    
+
+}
+.main-text
+{
+    position: absolute;
+    right: 20%;
+    color: white;
+
+    z-index: 1;
+ 
+}
+.opacity-filter
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+/*  Benefits Section */
+
+/* Settign background-position to 50% ensures that my image "shifts" as the screen is resized. The middle of the image (focus) will
+always be visible. */
+
+.benefit-images
+{
+    
+    background-size: cover;
+    position: relative;
+    background-position: 50%;
+    border-radius: 0.5cm;
+} 
+.benefits-section
+{
+    padding:  3% 10%;
+    text-align: center;
+}
+/* Setting Z-index of 2, so that text shows up above he fade/opacity filter */
+.benefits-text-reveal
+{
+    color:white;
+    z-index: 2;
+
+}
+
+.benefit-1
+{
+    background-image: url("Images/save_turtles.jpeg");
+    height: 400px;
+   
+}
+.benefit-2
+{
+    background-image: url("Images/tasty_waterss.jpeg");
+ 
+    height: 100px;
+}
+
+.benefit-3
+{
+    height: 290px;
+    background-image: url("Images/healthy-waters.jpeg");
+}
+
+/* This is responsible for creating the fade-in effect when hovering over each of the benefits pictures.
+Position set to absolute so it can sit on top of its parent container. */
+.opacity-filter-benefits
+{
+    border-radius: 0.5cm;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    background-color: blue;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease;
+    z-index: 1;
+}
+
+.opacity-filter-benefits:hover
+{
+  opacity: 1;
+
+}
+
+/* Testimonial section*/
+
+.testimonials-section
+{
+     background-color: lightcyan;
+    padding: 5% 10%; 
+    text-align: center;
+}
+
+.testimonial-images
+{ 
+    width: 150px;
+    height: auto;
+    transition: 1s ease;
+    
+}
+.testimonial-images:hover
+{
+
+  filter: drop-shadow(0px 2px 5px -2px green);
+  transform: translatey(-20px);
+  cursor: pointer;
+  
+}
+
+
+/* Footer */
+
+.footer-text
+{
+    line-height: 200px;
+    font-size: 1.5rem;
+    color: white;
+    
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaterDrinkers</title>
+
+    <!-- Remember to place bootstrap link before my style sheet link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="Icon" href="images/icon.ico">
+
+</head>
+
+<body>
+    <a class="page-up" href="#top-page"> Back to Top</a>
+
+    <!-- To link sections of content on the same page..
+    1. Create a name for the section you want to link to.
+    2.  Put that section name in the href of the anchor tag (preceded by a # sign)
+    3. Put that same name as an id for the element you are linking to. -->
+
+    <nav id="top-page" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">WaterDrinkers. Org</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ben-link">Benefits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#test-link">Testimonials</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="main-section">
+        <div class="main-text">
+
+            <h1 class=" title section-headings"> Water...</h1>
+            <h2>It's A Refreshing Thing</h2>
+        </div>
+        <!-- Opacity filer class adds a filter over our bkg image. This helps the text to stand out more. -->
+        <div class="opacity-filter">
+
+        </div>
+    </div>
+
+    <!-- Section dedicated to the benefits of water -->
+
+    <div id="ben-link" class=" container-fluid benefits-section">
+
+        <h1 class="section-headings">Benefits</h1>
+
+
+        <!-- Inside this row, there are two columns of equal width on medium screens and above. -->
+        <div class="row container-fluid">
+
+            <div class="col-md-6">
+
+                <div class="benefit-images benefit-1 ">
+
+
+                    <div class="opacity-filter-benefits d-flex align-items-center ">
+
+                        <h2 class=" BENEFITS-LINK benefits-text-reveal"> Save the Turtles</h2>
+                    </div>
+                </div>
+                <p> When you drink water from a bottle instead of from
+                    plastic bottles, you keep our ocean turtles safe!
+                </p>
+            </div>
+
+            <!-- Within this second column, there are two div elements that are too wide to fit beside each other, thus are 
+            put onto separate rows. This creates a nice gallery type effect -->
+            <div class="col-md-6">
+                <div class="benefit-images benefit-2">
+
+                    <div class="opacity-filter-benefits d-flex align-items-center">
+                        <h2 class="benefits-text-reveal">It tastes good!</h2>
+
+                    </div>
+
+
+                </div>
+
+
+                <p> Theres nothing better than a cold glass of water
+                    on a warm day, or just after a good meal!
+                </p>
+                <div class="benefit-3 benefit-images ">
+
+
+                    <div class="opacity-filter-benefits d-flex align-items-center">
+                        <h2 class="benefits-text-reveal ">Its good for your system!</h2>
+                    </div>
+                </div>
+                <p> Your body is made up of mostly water! Its important to get a
+                    drink everyday so you can stay hydrated and healthy.
+                </p>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- Section dedicated towards the testimonials. -->
+
+    <section id="test-link" class="testimonials-section container-fluid">
+
+
+        <div class="row testimonial-row ">
+            <h1 class="section-headings"> Heres what People have had to say! </h1>
+
+            <!--   Using bootstrap columns to divide each testimonial block into four equal spaces on medium screens and above.
+            On smaller screens, they will take up one row of space -->
+
+            <!-- Each testimonial consists of the image of the person, their name, and a short comment. -->
+            <div class="col-md-4 testimonial">
+                <img class="testimonial-images" src="Images/tm.png" alt="person-drinking-water">
+                <h3 class="testimonial-name">Jenny From the Block</h3>
+                <p> I love water... its great! We need to make sure that everybody has access to it.</p>
+            </div>
+            <div class="col-md-4 testimonial">
+                <img class="testimonial-images" src="Images/billy.png" alt="person-drinking-water">
+                <h3 class="testimonial-name">Billy</h3>
+                <p> Water is pretty good I'd have to admit. I drink it like... everyday</p>
+            </div>
+            <div class="col-md-4 testimonial">
+                <img class="testimonial-images" src="Images/bmom.png" alt="person-drinking-water">
+                <h3 class="testimonial-name">Billy's Mom</h3>
+                <p> Did Billy give another random testimonial!?</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <h3 class="footer-text"> Thanks for stopping by!</h3>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>
